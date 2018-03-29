@@ -7,6 +7,7 @@ html, body{
 }
 /*skip content*/
 .skip{
+
 	position: absolute;
 	left: -999px;
 	top: auto;
@@ -26,24 +27,28 @@ a.skip:active, a.skip:focus, a.skip:hover {
 	z-index: 999;
 }
 html, body, header, footer{
-    background-color: #ECECEA;
-    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
 }
 header, footer, .logo {
-	background-color: #211D24;
-	color: #DDDDDA; 
+	background-color: #7395AE;
+	color: black; 
 }
 body{
 	display: flex;
 	flex-direction: column;
+	/*background-image: url("https://images.megapixl.com/5275/52752965.jpg");*/
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 h1, h2, h3, h4, h5, h6{
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 p{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 h1{ 
 	font-size: 1.75em;
@@ -66,6 +71,7 @@ h6{
 .main-content{
 	flex: 1 0 auto;
 	margin-top: 110px;
+
 }
 .about, .work, .crafts, .contact{
 	margin: auto;
@@ -75,9 +81,9 @@ h6{
 
 /*-----HEADER & NAVIGATION-----*/
 header{
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 105%;
-    box-shadow: 0px 18px 26px 1px rgba(141, 141, 139, .75);
+    /*box-shadow: 0px 18px 26px 1px rgba(141, 141, 139, .75);*/
     width: 100%;
     position: fixed;
 }
@@ -85,16 +91,16 @@ header{
 .top-nav ul{
 	list-style-type: none;
 	padding: 0;
-	background-color: #211D24; /*CHANGE*/
+	background-color: #7395AE; /*CHANGE*/
 	margin: 0;
 	display: block;
 }
 .top-nav ul li, .menu-icon{
-	border-top: 1px solid #DDDDDA; /*CHANGE*/
+	border-top: 3px solid black;
 }
 .top-nav ul li a{
 	font-size: 1em;
-	color: #DDDDDA; /*CHANGE*/
+	color: black; /*CHANGE*/
 	text-decoration: none;
 	padding: .5em 1em;
 	display: block;
@@ -109,24 +115,27 @@ header{
 	text-align: center;
 }
 .top-nav ul li a.current-page{
-	color: #F54320;
+	content: "\27A3  ";
+	color: white;
 	font-weight: bold;
 }
 .top-nav ul li a.current-page:before {
-  content: "\27A4  ";
+  content: "\27A3  ";
   color: #F54320;
   padding-right: 4px;
   position: relative;
   top: 1px;
 }
-.top-nav ul li a:hover, .menu-icon a:hover, .top-nav ul li a:focus, .menu-icon a:focus{
-    content: "\27A4  ";
-    background-color: #E3AD02;
-    color: #DDDDDA;
+
+.top-nav ul li a:hover, .menu-icon a:hover, .top-nav ul li a:focus, .menu-icon a:focus, .top-nav ul li a:active{
+    content: "\27A3  ";
+    background-color: white;
+    color: black;
     font-weight: bold;
 }
-.top-nav ul li a:hover:before, .top-nav ul li a:focus:before{
-  	color: #DDDDDA;
+.top-nav ul li a:hover:before, .top-nav ul li a:focus:before, .top-nav ul li a:active:before{
+  	content: "\27A3  ";
+  	color: black;
   	padding-right: 4px;
   	position: relative;
   	top: 1px;
@@ -138,7 +147,7 @@ header{
 
 /*-----LOGO-----*/
 .logo{
-	background-color: #211D24; /*CHANGE*/
+	background-color: #7395AE; /*CHANGE*/
 	margin: 0;
 	text-align: center;
 	padding: .25em .75em;
@@ -152,7 +161,6 @@ footer{
 	/*color: #F54320;*/
 	font-size: .85em;
 	text-align: center;
-	box-shadow: 0px -10px 30px 2px rgba(141, 141, 139, .75);
 }
 footer p{
 	padding-top: .5em;
@@ -169,20 +177,54 @@ footer p{
 	margin-top: 250px;
 }
 .home-flag{
-	background-color: #17BEBB;
-	color: #DDDDDA;
+	/*background-color:#7395AE;*/
+	background-image: url("https://paulinhorahsdotcom.files.wordpress.com/2016/09/tumblr_static_b188no8xhcwkco4ko0gwo44oc_640_v2.gif?w=500");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
 	display: flex;
 	flex-direction: column;
-	max-width: 300px;
+	max-width: 400px;
 	margin: auto;
 	padding: 1.5em;
 	box-shadow: 0px 8px 10px gray, -10px 8px 15px gray, 10px 8px 15px gray;
+	/*text-align: center;*/
+
 }
+
 
 /*-----IMAGES PAGE ------*/
 .main-content-crafts{
 	margin-top: 250px;
 }
+
+.main-content-background {
+	margin-top: 130px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.main-content-background img {
+	display: inline-block;
+	/*flex-direction: column;*/
+	/*float: left;*/
+}
+
+.main-content-background .background-title {
+	display: inline-block;
+	/*flex-direction: column;*/
+	/*float: left;*/
+	margin-left: 3px;
+}
+
+.main-content-background p, .main-content-passions p, .main-content-contact p, .main-content-projects .project {
+	text-align: justify;
+}
+.main-content-contact .contact-title {
+	text-align: center;
+}
+
+
 /*photo gallery*/
 .crafts{
 	display: block;
@@ -196,5 +238,5 @@ footer p{
 .photo-cell img {
 	width: 98%;
   	display: block;
-  	box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
+  	/*box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);*/
 }
