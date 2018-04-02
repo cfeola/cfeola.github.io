@@ -43,6 +43,7 @@ body{
 	background-color: white;
 	background-repeat: no-repeat;
 	background-size: cover;
+
 }
 h1, h2, h3, h4, h5, h6{
 	font-family: 'Raleway', sans-serif;
@@ -106,6 +107,7 @@ header{
 	display: block;
 	text-align: center;
 }
+
 .menu-icon a{
 	font-size: 1em;
 	color: #DDDDDA; /*CHANGE*/
@@ -115,7 +117,6 @@ header{
 	text-align: center;
 }
 .top-nav ul li a.current-page{
-	content: "\27A3  ";
 	color: white;
 	font-weight: bold;
 }
@@ -127,19 +128,20 @@ header{
   top: 1px;
 }
 
-.top-nav ul li a:hover, .menu-icon a:hover, .top-nav ul li a:focus, .menu-icon a:focus, .top-nav ul li a:active{
+.top-nav ul li a:hover, .menu-icon a:hover, .top-nav ul li a:focus, .menu-icon a:focus, .top-nav ul li a.current-page:active,.menu-icon a.current-page:active {
     content: "\27A3  ";
     background-color: white;
     color: black;
     font-weight: bold;
 }
-.top-nav ul li a:hover:before, .top-nav ul li a:focus:before, .top-nav ul li a:active:before{
+.top-nav ul li a:hover:before, .top-nav ul li a:focus:before, .top-nav ul li a.current-page:active:before {
   	content: "\27A3  ";
   	color: black;
   	padding-right: 4px;
   	position: relative;
   	top: 1px;
 }
+
 /*implement menu toogle*/
 .top-nav.toggle-open ul{
 	display: block;
@@ -175,6 +177,11 @@ footer p{
 /*-----HOMEPAGE-----*/
 .main-content-home{
 	margin-top: 250px;
+	background-color: white;
+}
+
+.body-homepage {
+	background-color: white;
 }
 .home-flag{
 	/*background-color:#7395AE;*/
@@ -185,6 +192,7 @@ footer p{
 	display: flex;
 	flex-direction: column;
 	max-width: 400px;
+	height: 170px;
 	margin: auto;
 	padding: 1.5em;
 	box-shadow: 0px 8px 10px gray, -10px 8px 15px gray, 10px 8px 15px gray;
@@ -206,20 +214,21 @@ footer p{
 
 .main-content-background img {
 	display: inline-block;
-	/*flex-direction: column;*/
-	/*float: left;*/
 }
 
 .main-content-background .background-title {
 	display: inline-block;
-	/*flex-direction: column;*/
-	/*float: left;*/
 	margin-left: 3px;
 }
 
-.main-content-background p, .main-content-passions p, .main-content-contact p, .main-content-projects .project {
+.main-content-background p, .main-content-passions p, .main-content-contact p, .main-content-projects p {
 	text-align: justify;
 }
+
+.main-content-projects p {
+	font-size: .85em;
+}
+
 .main-content-contact .contact-title {
 	text-align: center;
 }

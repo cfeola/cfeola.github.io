@@ -1,5 +1,5 @@
 @media only screen and (max-width: 650px) {
-.main-content-background,.main-content-passions, .main-content-contact {
+.main-content-background,.main-content-passions, .main-content-contact, .main-content-projects{
 	margin-left: 10px;
 	margin-right: 10px;
 }
@@ -12,10 +12,8 @@
 }
 .main-content-passions img {
 	display: inline-block;
-	/*flex-direction: column;*/
 	width: 32%;
 	height: auto;
-	/*margin-top: 170px;*/
 }
 .main-content-contact .contact-title, .main-content-passions .passions-title {
 	margin-top: 170px;
@@ -26,6 +24,21 @@
 
 .main-content-passions .passions-title {
 	text-align: center;
+}
+.main-content-projects #p1 img {
+	display: inline-block;
+	width: 32%;
+	height: auto;
+}
+.main-content-projects #p2 img {
+	display: inline-block;
+	width: 100%;
+	height: auto;
+}
+.main-content-projects #p3 img {
+	display: inline-block;
+	width: 45%;
+	height: auto;
 }
 }
 
@@ -54,10 +67,7 @@
 	height: auto;
 
 }
-.main-content-passions {
-	margin-left: 10px;
-	margin-right: 10px;
-}
+
 .main-content-passions img {
 	display: inline-block;
 	width: 32%;
@@ -68,12 +78,27 @@
 	margin-left: 10px;
 	margin-right: 10px;
 }
-.main-content-projects {
+.main-content-projects,.main-content-passions, .main-content-passions iframe  {
 	margin-left: 10px;
 	margin-right: 10px;
 }
 .main-content-passions .passions-title {
 	text-align: center;
+}
+.main-content-projects #p1 img {
+	display: inline-block;
+	width: 32%;
+	height: auto;
+}
+.main-content-projects #p2 img {
+	display: inline-block;
+	width: 100%;
+	height: auto;
+}
+.main-content-projects #p3 img {
+	display: inline-block;
+	width: 45%;
+	height: auto;
 }
 }
 
@@ -131,6 +156,26 @@
 .main-content-passions .passions-title {
 	text-align: center;
 	margin-top: -15px;
+}
+
+.main-content-projects #p1 img {
+	display: inline-block;
+	width: 32%;
+	height: auto;
+
+}
+.main-content-projects #p1 p {
+	display: inline-block;
+}
+.main-content-projects #p2 img {
+	display: inline-block;
+	width: 100%;
+	height: auto;
+}
+.main-content-projects #p3 img {
+	display: inline-block;
+	width: 45%;
+	height: auto;
 }
 footer {
 	position: static;
