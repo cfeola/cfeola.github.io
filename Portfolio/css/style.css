@@ -163,16 +163,26 @@ footer{
 	/*color: #F54320;*/
 	font-size: .85em;
 	text-align: center;
+	text-align: center;
 }
+
 footer p{
-	padding-top: .5em;
-	padding-bottom: .75em;
+	
+	padding-bottom: .05em;
 }
 
 .icon{
-	padding: .5em .25em 0;
-	height: 25px;
+	height: 35px;
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-left: 5px;
 }
+
+.icon:hover {
+    opacity: 0.5;
+}
+
+
 
 /*-----HOMEPAGE-----*/
 .main-content-home{
