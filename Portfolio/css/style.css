@@ -204,6 +204,7 @@ footer p{
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: white;
+	text-shadow: black 5px 5px 5px;
 	display: flex;
 	flex-direction: column;
 	max-width: 400px;
