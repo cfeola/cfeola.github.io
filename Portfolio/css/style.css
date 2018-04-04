@@ -147,6 +147,11 @@ header{
 	display: block;
 }
 
+embed {
+    display: block;
+    margin: 0 auto;
+}
+
 /*-----LOGO-----*/
 .logo{
 	background-color: #7395AE; /*CHANGE*/
@@ -194,7 +199,6 @@ footer p{
 	background-color: white;
 }
 .home-flag{
-	/*background-color:#7395AE;*/
 	background-image: url("https://paulinhorahsdotcom.files.wordpress.com/2016/09/tumblr_static_b188no8xhcwkco4ko0gwo44oc_640_v2.gif?w=500");
 	background-repeat: no-repeat;
 	background-size: cover;
