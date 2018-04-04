@@ -117,12 +117,13 @@ header{
 	text-align: center;
 }
 .top-nav ul li a.current-page{
-	color: white;
+	color: black;
 	font-weight: bold;
+	background-color: gray;
 }
 .top-nav ul li a.current-page:before {
   content: "\27A3  ";
-  color: #F54320;
+  color: darkred;
   padding-right: 4px;
   position: relative;
   top: 1px;
@@ -130,7 +131,7 @@ header{
 
 .top-nav ul li a:hover, .menu-icon a:hover, .top-nav ul li a:focus, .menu-icon a:focus, .top-nav ul li a.current-page:active,.menu-icon a.current-page:active {
     content: "\27A3  ";
-    background-color: white;
+    background-color: gray;
     color: black;
     font-weight: bold;
 }
