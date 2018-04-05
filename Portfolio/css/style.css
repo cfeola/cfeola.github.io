@@ -39,7 +39,6 @@ header, footer, .logo {
 body{
 	display: flex;
 	flex-direction: column;
-	/*background-image: url("https://images.megapixl.com/5275/52752965.jpg");*/
 	background-color: white;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -148,10 +147,7 @@ header{
 	display: block;
 }
 
-embed {
-    display: block;
-    margin: 0 auto;
-}
+
 
 /*-----LOGO-----*/
 .logo{
@@ -170,10 +166,10 @@ footer{
 	font-size: .85em;
 	text-align: center;
 	text-align: center;
+	width: 100%;
 }
 
 footer p{
-	
 	padding-bottom: .05em;
 }
 
@@ -204,16 +200,15 @@ footer p{
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: lightblue;
+	font-weight: bold;
 	text-shadow: black 5px 5px 5px;
 	display: flex;
 	flex-direction: column;
 	max-width: 400px;
-	height: 170px;
+	height: 175px;
 	margin: auto;
 	padding: 1.5em;
 	box-shadow: 0px 8px 10px gray, -10px 8px 15px gray, 10px 8px 15px gray;
-	/*text-align: center;*/
-
 }
 
 
