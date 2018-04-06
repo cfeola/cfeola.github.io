@@ -91,7 +91,7 @@ header{
 .top-nav ul{
 	list-style-type: none;
 	padding: 0;
-	background-color: #7395AE; 
+	background-color: #7395AE;
 	margin: 0;
 	display: block;
 }
@@ -100,7 +100,7 @@ header{
 }
 .top-nav ul li a{
 	font-size: 1em;
-	color: black; /*CHANGE*/
+	color: black; 
 	text-decoration: none;
 	padding: .5em 1em;
 	display: block;
@@ -109,7 +109,7 @@ header{
 
 .menu-icon a{
 	font-size: 1em;
-	color: #DDDDDA; /*CHANGE*/
+	color: #DDDDDA; 
 	text-decoration: none;
 	padding: .5em 1em;
 	display: block;
@@ -151,7 +151,8 @@ header{
 
 /*-----LOGO-----*/
 .logo{
-	background-color: #7395AE; /*CHANGE*/
+	background-color: #7395AE;
+	/*background-color: gray; */
 	margin: 0;
 	text-align: center;
 	padding: .25em .75em;
@@ -162,7 +163,6 @@ header{
 
 /*-----FOOTER-----*/
 footer{
-	/*color: #F54320;*/
 	font-size: .85em;
 	text-align: center;
 	text-align: center;
@@ -185,19 +185,15 @@ footer p{
 }
 
 
-
 /*-----HOMEPAGE-----*/
-.main-content-home{
-	margin-top: 250px;
-	background-color: white;
-
-}
-
 .body-homepage {
 	background-color: white;
 }
+.main-content-home{
+	margin-top: 250px;
+}
 .home-flag{
-	background-image: url("https://paulinhorahsdotcom.files.wordpress.com/2016/09/tumblr_static_b188no8xhcwkco4ko0gwo44oc_640_v2.gif?w=500");
+	background-image: url(../img/snow.gif);
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: lightblue;
@@ -205,17 +201,26 @@ footer p{
 	text-shadow: black 5px 5px 5px;
 	display: flex;
 	flex-direction: column;
-	max-width: 400px;
-	height: 175px;
 	margin: auto;
 	padding: 1.5em;
-	box-shadow: 0px 8px 10px gray, -10px 8px 15px gray, 10px 8px 15px gray;
 }
+.home-flag h1 {
+	font-size: 30px;
+}
+.home-flag p {
+	font-size: 16px;
+}
+/*-----Thank you page-----*/
 
+.main-content-thanks{
+	margin-top: 250px;
+	background-color: white;
+}
 .body-thanks h1{
 	text-align: center;
 }
-/*-----IMAGES PAGE ------*/
+
+/*-----Content pages ------*/
 .main-content-crafts{
 	margin-top: 250px;
 }
@@ -264,5 +269,4 @@ footer p{
 .photo-cell img {
 	width: 98%;
   	display: block;
-  	/*box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);*/
 }
