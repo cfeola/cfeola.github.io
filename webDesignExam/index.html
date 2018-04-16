@@ -1,0 +1,34 @@
+<!DOCTYPE html>	
+<html lang="en">
+<head> 
+	<title> Colleen Feola - Exam 2 </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!--Style-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		    $("#button1").click(function(){
+		        $("#img1").hide();
+		        $("#img2").css({"margin-left":"225px"});
+		    });
+		});
+		$(document).ready(function(){
+		    $("#button2").click(function(){
+		        $("#img1").show();
+		        $("#img2").removeAttr('style');
+		    });
+		});
+	</script>
+
+
+</head>
+<body> 
+	<h1> Colleen Feola </h1>
+	<img id = "img1" src="images/examPic.jpg" alt="Exam pic 1"><img id = "img2" src="images/UMSI-logo.jpg" alt="Exam pic 2"><br><br>
+	<button id = "button1" type="button">Hide Image</button>
+	<button id = "button2" type="button">Show Image</button>
+</body>
+</html>

@@ -1,0 +1,19 @@
+@media only screen and (min-width: 650px) {
+img {
+	display: inline-block;
+	width: 35%; 
+	padding: 5%;
+	border: 5px solid blue;
+	margin: 0;
+	margin-right: -4px; 
+}
+}
+@media only screen and (min-width: 1000px) {
+img {
+	display: inline-block; 
+	width: 35%;
+	padding: 5%;
+	border: 5px solid blue;
+	margin: 0;
+	margin-right: -4px; 
+}
